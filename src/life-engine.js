@@ -4,7 +4,7 @@ function LifeEngine(items) {
 
 LifeEngine.prototype.isCellLiveNext = function(isLiveNow, neighborNumber) {
 
-  return false;
+  return null;
 
 };
 

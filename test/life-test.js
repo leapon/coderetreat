@@ -18,6 +18,7 @@ describe('GameOfLife', function() {
     expect(lifeEngine.isCellLiveNext(true, 1)).to.equal(false);
   });
 
+  /*
   it('isCellLiveNext() should return true if live cell has 2 or 3 neighbors', function() {
     var lifeEngine = new LifeEngine();
     expect(lifeEngine.isCellLiveNext(true, 2)).to.equal(true);
@@ -35,4 +36,6 @@ describe('GameOfLife', function() {
     var lifeEngine = new LifeEngine();
     expect(lifeEngine.isCellLiveNext(false, 3)).to.equal(true);
   });
+  */
+  
 });
