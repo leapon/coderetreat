@@ -1,0 +1,23 @@
+{
+  "name": "coderetreat",
+  "version": "1.0.0",
+  "description": "Global Day of CodeRetreat",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leapon/coderetreat.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leapon/coderetreat/issues"
+  },
+  "homepage": "https://github.com/leapon/coderetreat#readme",
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "mocha": "^3.1.2"
+  }
+}
