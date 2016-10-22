@@ -32,10 +32,15 @@ describe('GameOfLife', function() {
     expect(lifeEngine.isCellLiveNext(true, 8)).to.equal(false);
   });
 
-  it('isCellLiveNext() should return false if dead cell has 3 neighbors', function() {
+  it('isCellLiveNext() should return false if dead cell <3 or >3 neighbors', function() {
+    var lifeEngine = new LifeEngine();
+    expect(lifeEngine.isCellLiveNext(false, 2)).to.equal(false);
+    expect(lifeEngine.isCellLiveNext(false, 4)).to.equal(false);
+  });
+
+  it('isCellLiveNext() should return true if dead cell has 3 neighbors', function() {
     var lifeEngine = new LifeEngine();
     expect(lifeEngine.isCellLiveNext(false, 3)).to.equal(true);
   });
-  
 
 });
