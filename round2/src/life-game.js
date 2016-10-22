@@ -1,6 +1,12 @@
 function LifeGame() {
 }
 
+LifeGame.prototype.getNeighborCount = function(input, xIndex, yIndex) {
+  var result = 0;
+
+  return result;
+};
+
 LifeGame.prototype.next = function(input) {
   console.log(">>>input:", input);
   var output = [];

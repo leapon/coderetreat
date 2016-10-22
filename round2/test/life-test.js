@@ -48,6 +48,12 @@ describe('GameOfLife Rule', function() {
 
 describe('GameOfLife Test', function() {
 
+  it('calculate live neighbor count for center cell in case 1 should return 3', function() {
+    var lifeGame = new LifeGame();
+    var input = [[0, 0, 0], [0, 1, 0], [0, 0, 0]];
+    expect(lifeGame.getNeighborCount(input, 1, 1)).to.equal(3);
+  });
+
   it('for 3x3 life with one center live centershould return all dead', function() {
     var lifeGame = new LifeGame();
     var input = [[0, 0, 0], [0, 1, 0], [0, 0, 0]];
